@@ -1,0 +1,23 @@
+{
+  "name": "baidu-link-submitter",
+  "version": "1.0.0",
+  "description": "百度链接提交工具 - 每日定时提交网站链接到百度站点收录",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "keywords": [
+    "baidu",
+    "seo",
+    "cloudflare",
+    "workers",
+    "link-submission"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

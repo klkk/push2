@@ -1,0 +1,17 @@
+name: 定时提交链接到百度
+
+on:
+  schedule:
+    # 每天上午9点执行 (UTC时间1点 = 北京时间9点)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  submit-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 调用定时任务接口
+        run: |
+          curl -X POST "${{ secrets.PAGES_URL }}/api/scheduled" \
+            -H "Content-Type: application/json" \
+            -d '{"trigger": "github-actions"}'
