@@ -7,9 +7,10 @@ crons = ["0 10 * * *"]  # 每天上午9点执行
 
 [[kv_namespaces]]
 binding = "SUBMITTED_LINKS"
-id = "24e09d537b9d413ba5a0e0d3ac06df9f"
+id = "xxxxxx"
 //preview_id = "your-preview-kv-namespace-id"
 
 [vars]
-BAIDU_SITE = "https://www.soliao.com"
-BAIDU_TOKEN = "IRDNtnnEy5Cu8hzu"
+BAIDU_SITE = "https://www.xxxx.com"
+
+BAIDU_TOKEN = "xxx"
